@@ -5,17 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>به آموزشیار خوش آمدید</title>
 
-    <!--Bootstrap-->
+    <!--Vendor-->
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate/animate.css">
 
     <!--Styles-->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
+<!--Main Section-->
+<main class="bg-default container ">
+    <div class="row">
+        <div class="col-12 col-md-8 g-0 ">
+            <div class="right-box-wrapper fullscreen-section">
+                <div class="welcome-wrapper position-relative">
+                    <img src="assets/images/pattern.svg" class="animate__animated animate__fadeInRight" alt="">
+                    <p class="text-white welcome-text animate__animated animate__fadeInUp">
+                        به آموزشیار
+                        <br>
+                        خوش آمدید
+                    </p>
+                </div>
+            </div>
 
-<!--Scripts-->
+        </div>
+        <div class="col col-md-4">
+            <div class="login-form-wrapper d-flex align-items-center justify-content-center h-100">
+                <form action="#" id="login-form" class="login-form position-relative animate__animated animate__fadeIn">
+
+                    <img src="assets/images/logo.svg" class="logo" alt="">
+
+                    <h3 class="form-title">ورود به سامانه</h3>
+
+                    <!--Username-->
+                    <div class="form-group mb-2">
+                        <label for="username" class="am-label">نام کاربری</label>
+
+                        <div class="input-group">
+
+                            <div class="input-group-prepend">
+
+                            <span class="input-group-text am-style am-style-form-append">
+                                <img src="assets/images/user.svg" alt="">
+                            </span>
+                            </div>
+                            <input type="text" name="username" id="username" class="form-control am-style p-0"
+                                   placeholder="نام کاربری خود را وارد کنید">
+                        </div>
+                    </div>
+                    <!--Username End-->
+
+                    <!--Password-->
+                    <div class="form-group mb-2">
+                        <label for="password" class="am-label"> رمز عبور</label>
+
+                        <div class="input-group">
+
+                            <div class="input-group-prepend">
+
+                            <span class="input-group-text am-style am-style-form-append">
+                                <img src="assets/images/password.svg" alt="">
+                            </span>
+                            </div>
+                            <input type="password" name="password" id="password" class="form-control am-style p-0"
+                                   placeholder="رمز عبور خود را وارد کنید">
+                        </div>
+                    </div>
+                    <!--Password End-->
+
+                    <!--Submit-->
+                    <button class="btn btn-am-default button w-100 mt-3" type="submit">
+                        <img src="assets/images/fingerprint.svg" alt="">
+                        ورود به سیستم
+                    </button>
+                    <!--Submit End-->
+
+
+                    <!--Forget Pass-->
+                    <div class="forget-box d-flex align-items-center justify-content-between mt-3">
+                        <a href="#" class="text-decoration-none text-white">فراموشی رمز عبور</a>
+                        <a href="#" class="text-decoration-none text-white">باز شدن قفل رمز عبور</a>
+                    </div>
+                    <!--Forget Pass End-->
+                </form>
+            </div>
+
+        </div>
+    </div>
+</main>
+<!--Main Section End-->
+
+<!--Vendor-->
 <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="assets/vendor/just-validate/just-validate.min.js"></script>
 
 <!--Main Script-->
 <script src="assets/js/main.js"></script>

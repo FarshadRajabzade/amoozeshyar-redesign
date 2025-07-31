@@ -48,7 +48,158 @@
     url('../fonts/woff2/DoranFaNum-ExtraBold.woff2') format('woff2');
 }
 
+:root {
+    --default-bg: #160430;
+    --default-btn: #3A007F;
+}
 
 body {
     font-family: 'Doran FaNum', sans-serif;
+    background-color: var(--default-bg);
+}
+
+.fullscreen-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.right-box-wrapper {
+    justify-content: center;
+}
+
+.right-box-wrapper .welcome-text{
+    font-size: 50px;
+}
+
+.right-box-wrapper .welcome-wrapper img{
+    position: absolute;
+    right: -8rem;
+    top: -5rem;
+}
+
+
+/*login form*/
+
+.login-form-wrapper {
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+}
+
+.login-form {
+    background-color: rgba(217, 217, 217, 0.02);
+    width: 100%;
+    padding: 2.8rem 1rem;
+    border-radius: 10px;
+}
+
+.login-form .form-title{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.login-form .logo {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 30px;
+}
+
+/*form*/
+
+.am-style {
+    margin: .4rem 0;
+    background-color: #261046;
+    border: none;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.am-style-form-append {
+    border-radius: 0 10px 10px 0;
+}
+
+.am-style:focus {
+    background-color: #261046;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.am-style:focus .am-style::placeholder{
+    font-size: 90px;
+}
+
+.am-style::placeholder {
+    color: #c7c7c7;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.am-label {
+    color: #fff;
+    font-size: 13px;
+}
+
+
+/*buttons*/
+
+.btn.btn-am-default {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    color: white;
+    outline: none;
+    overflow: hidden;
+}
+.btn.btn-am-default span {
+    position: relative;
+    pointer-events: none;
+}
+.btn.btn-am-default::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, rgb(105, 80, 173), transparent);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: width .2s ease, height .2s ease;
+}
+.btn.btn-am-default:hover::before {
+    --size: 400px;
+}
+
+.btn.btn-am-default {
+    background-color: var(--default-btn);
+    border-radius: 10px;
+    color: #fff;
+    padding: .6rem 0;
+}
+
+.btn.btn-am-default img {
+    width: 22px;
+}
+
+/*forget box*/
+.forget-box a {
+    font-size: .6rem !important;
+}
+
+/*media*/
+
+@media (max-width: 768px) {
+    .right-box-wrapper .welcome-text {
+        font-size: calc(28px + 2vw);
+    }
 }
