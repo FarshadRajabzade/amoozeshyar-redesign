@@ -118,10 +118,12 @@ body {
     color: #fff !important;
     font-weight: 500;
     font-size: .8rem;
+    height: 40px;
 }
 
 .am-style-form-append {
     border-radius: 0 10px 10px 0;
+    height: 40px;
 }
 
 .am-style:focus {
